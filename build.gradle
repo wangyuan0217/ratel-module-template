@@ -6,15 +6,12 @@ buildscript {
 
     repositories {
         repositories {
-            maven {
-                name "aliyunmaven"
-                url "https://maven.aliyun.com/repository/public"
-            }
-            maven {
-                name "aliyunGoogle"
-                url "https://maven.aliyun.com/repository/google"
-            }
-
+            maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+            maven{ url 'https://maven.aliyun.com/repository/google'}
+            maven{ url 'https://maven.aliyun.com/repository/gradle-plugin'}
+            maven{ url 'https://maven.aliyun.com/repository/public'}
+            maven{ url 'https://maven.aliyun.com/repository/jcenter'}
+            google()
         }
     }
     dependencies {
@@ -35,15 +32,16 @@ allprojects {
 
     repositories {
         repositories {
+            maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+            maven{ url 'https://maven.aliyun.com/repository/google'}
+            maven{ url 'https://maven.aliyun.com/repository/gradle-plugin'}
+            maven{ url 'https://maven.aliyun.com/repository/public'}
+            maven{ url 'https://maven.aliyun.com/repository/jcenter'}
+            google()
+            mavenCentral()
             maven {
-                name "aliyunmaven"
-                url "https://maven.aliyun.com/repository/public"
+                url "https://jitpack.io"
             }
-            maven {
-                name "aliyunGoogle"
-                url "https://maven.aliyun.com/repository/google"
-            }
-
         }
     }
 }

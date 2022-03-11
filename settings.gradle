@@ -1,3 +1,5 @@
 include ':demoapp',
+        ':crack-weico',
         ':createhelper',
-        ':crack-demoapp'
+        ':crack-demoapp',
+        ':crack-weico'
